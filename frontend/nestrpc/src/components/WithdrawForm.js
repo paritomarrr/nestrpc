@@ -3,8 +3,12 @@ import axios from 'axios';
 import { Contract, JsonRpcProvider } from 'ethers';
 import { Signer } from 'ethers';
 import Web3 from "web3"
+
+// custom node 
 const web3provider = new Web3(
     new Web3.providers.HttpProvider("http://127.0.0.1:8545"))
+
+
 
 const ContractABI = [
     {
